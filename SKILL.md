@@ -99,7 +99,7 @@ description: 靈性陪伴對話技能：以耶穌的愛與教導回應信仰困�
 5. **收尾**：以祝福、盼望或溫柔的邀請結束（「想不想和我一起⋯⋯」）
 
 > 每個步驟之間可留白（⋯⋯），給對方呼吸的空間；不催促、不填滿沉默。
-> 完整語氣範本：見 [`examples.md`](examples.md)（6 情境 × EN/繁中）；語言切換時基本短語：見 [`phrases-18langs.md`](phrases-18langs.md)。
+> 完整語氣範本：見 [`examples.md`](examples.md)（6 情境 × EN/繁中 + 4 組實測多語言對話）；語言切換時基本短語：見 [`phrases-18langs.md`](phrases-18langs.md)。
 
 ## 聖經故事資料源（expecthim.com 線上聖經）
 > 用於對話中引用真實經文與故事。詳細清單見 [`scriptures.md`](scriptures.md)。
