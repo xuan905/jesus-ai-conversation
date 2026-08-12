@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>耶穌AI · Jesus AI · 靈性陪伴對話</title>
+  <meta name="description" content="以耶穌的愛與教導為核心，提供18語言信仰陪伴、禱告指引、聖經故事與心靈安慰。溫柔聆聽，以提問引導。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Serif+SC:wght@400;600&family=Noto+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --accent: #E84393;
+      --accent2: #8B5CF6;
+      --accent-bg: #FFF0F5;
+    }
+    [data-theme="dark"] { --accent-bg: #1a0a12; }
+    .hero-bg { background: linear-gradient(135deg, #1a0a20 0%, #2d0a40 50%, #1a0a20 100%) !important; }
+    [data-theme="dark"] .hero-bg { background: linear-gradient(135deg, #0a0510 0%, #1a0a30 50%, #0a0510 100%) !important; }
+    .portrait-inner { background: linear-gradient(135deg, #E84393, #8B5CF6); font-size: 4rem; }
+    .about-concepts .concept-tag { background: #FFF0F5; color: #E84393; border-color: #E8439340; }
+    [data-theme="dark"] .about-concepts .concept-tag { background: #1a0a12; color: #F0A0C0; border-color: #E8439340; }
+    .hero-cross { font-size: 4rem; display: block; margin-bottom: 0.5rem; color: #E84393; }
+    .feature-card:hover { border-color: var(--accent); }
+    .install-section { border-top: 2px solid var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">✝</span>
+      <span class="logo-txt">耶穌AI</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">關於</a>
+      <a href="#features" data-i18n="nav.features">特色</a>
+      <a href="#install" data-i18n="nav.install">安裝</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn active" data-lang="zh-TW">繁</button>
+      <button class="lang-btn" data-lang="zh-CN">簡</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="theme-btn" id="themeBtn" title="切換主題">☀️</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content container">
+    <div class="hero-label">✦ OpenClaw Skill</div>
+    <h1 class="hero-title">
+      <span class="hero-cross">✝</span>
+      <span data-i18n="hero.title">耶穌AI<br>靈性陪伴對話</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.desc">
+      以耶穌的愛與教導為核心，溫柔聆聽，以提問引導。<br>
+      支援 18 種語言，適合日常靈修、慕道友探索與信仰陪伴。
+    </p>
+    <div class="hero-actions">
+      <a href="#install" class="btn btn-primary" data-i18n="hero.btnInstall">立即安裝</a>
+      <a href="#features" class="btn btn-outline" data-i18n="hero.btnFeatures">了解特色</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">18</div>
+        <div class="stat-label" data-i18n="stat.lang">語言</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label" data-i18n="stat.always">隨時陪伴</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">66</div>
+        <div class="stat-label" data-i18n="stat.books">聖經書卷</div>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">↓</div>
+  </div>
+</section>
+
+<!-- Quote -->
+<section class="section quote-section">
+  <div class="container">
+    <blockquote class="hero-quote" data-i18n="quote.main">
+      「我這些事告訴你們，是要叫你們在我裡面有平安。<br>在世上你有苦難，但你可以放心，我已經勝了世界。」
+    </blockquote>
+    <cite data-i18n="quote.ref">— 約翰福音 16:33</cite>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="section-eyebrow">✦ About</div>
+    <h2 class="section-title" data-i18n="about.title">關於耶穌AI</h2>
+    <div class="about-grid">
+      <div class="about-portrait">
+        <div class="portrait-frame">
+          <div class="portrait-inner">
+            <div class="portrait-txt">✝</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="about-text" data-i18n="about.desc1">
+          耶穌AI 是一位靈性陪伴者，以耶穌的性情與教導為藍本——愛、接納、憐憫、誠實、溫柔而堅定。它不是聲稱自己是歷史上的耶穌，而是以耶穌的心腸陪伴每一個需要的人。
+        </p>
+        <p class="about-text" data-i18n="about.desc2">
+          無論你是在苦難中掙扎、對信仰有困惑、只是想找人安靜陪伴，耶穌AI 都會先看見「你」這個人，再談「事」。它少用命令，多用邀請；少給答案，多用問題引導你自己思考。
+        </p>
+        <div class="about-concepts">
+          <span class="concept-tag">❤️ 愛與接納</span>
+          <span class="concept-tag">🙏 禱告陪伴</span>
+          <span class="concept-tag">📖 聖經故事</span>
+          <span class="concept-tag">❓ 提問引導</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section features-section" id="features">
+  <div class="container">
+    <div class="section-eyebrow">✦ Features</div>
+    <h2 class="section-title" data-i18n="features.title">技能特色</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3 data-i18n="feat.lang.title">18 種語言</h3>
+        <p data-i18n="feat.lang.desc">繁中、簡中、英日韓、西法德俄、阿拉伯印地語等，自動辨識語言全程陪伴，聖經經文引用相應譯本。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🙏</div>
+        <h3 data-i18n="feat.prayer.title">禱告引導</h3>
+        <p data-i18n="feat.prayer.desc">引導你用自己的話向神禱告，不背模板，陪你說出心裡真實的話。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3 data-i18n="feat.bible.title">聖經故事</h3>
+        <p data-i18n="feat.bible.desc">好撒瑪利亞人、浪子回頭、撒種比喻……用故事回應生命處境，溫柔而不說教。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3 data-i18n="feat.listen.title">溫柔聆聽</h3>
+        <p data-i18n="feat.listen.desc">先看見情緒，再談事情。情緒未穩前，不急著給建議；用提問引導你整理思緒。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤲</div>
+        <h3 data-i18n="feat.compassion.title">靈性陪伴</h3>
+        <p data-i18n="feat.compassion.desc">陪伴孤單、迷茫、懷疑、罪咎、喪親各種生命處境，接納所有掙扎，不論你處於哪個階段。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌱</div>
+        <h3 data-i18n="feat.growth.title">生命成長</h3>
+        <p data-i18n="feat.growth.desc">不只安慰，更陪你探索信仰深度，在神的愛中認識自己，建立與神的關係。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Example Prompts -->
+<section class="section examples-section">
+  <div class="container">
+    <div class="section-eyebrow">✦ Try</div>
+    <h2 class="section-title" data-i18n="examples.title">可以這樣開始</h2>
+    <div class="example-prompts">
+      <div class="example-prompt" onclick="navigator.clipboard?.writeText(this.dataset.prompt)">
+        <div class="prompt-text" data-i18n="prompt1">「我最近感到很迷茫，不知道人生的方向在哪裡……」</div>
+        <div class="prompt-label" data-i18n="prompt.label">點擊複製</div>
+      </div>
+      <div class="example-prompt" onclick="navigator.clipboard?.writeText(this.dataset.prompt)">
+        <div class="prompt-text" data-i18n="prompt2">「我為家人禱告，但不知道該怎麼說……」</div>
+        <div class="prompt-label" data-i18n="prompt.label">點擊複製</div>
+      </div>
+      <div class="example-prompt" onclick="navigator.clipboard?.writeText(this.dataset.prompt)">
+        <div class="prompt-text" data-i18n="prompt3">「耶穌怎麼看苦難這件事？」</div>
+        <div class="prompt-label" data-i18n="prompt.label">點擊複製</div>
+      </div>
+      <div class="example-prompt" onclick="navigator.clipboard?.writeText(this.dataset.prompt)">
+        <div class="prompt-text" data-i18n="prompt4">「我對信仰有懷疑，可以跟你聊聊嗎？」</div>
+        <div class="prompt-label" data-i18n="prompt.label">點擊複製</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Install -->
+<section class="section install-section" id="install">
+  <div class="container">
+    <div class="section-eyebrow">✦ Install</div>
+    <h2 class="section-title" data-i18n="install.title">開始使用</h2>
+    <div class="install-tabs">
+      <button class="install-tab active" data-tab="clawhub" data-i18n="install.tabClawhub">ClawHub 安裝</button>
+      <button class="install-tab" data-tab="manual" data-i18n="install.tabManual">手動複製</button>
+    </div>
+    <div class="install-panel active" id="tab-clawhub">
+      <div class="install-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div data-i18n="install.step1">確認已安裝 OpenClaw 並開啟對話視窗</div>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div data-i18n="install.step2">在對話中輸入以下指令：</div>
+          <div class="install-url-box">
+            <code class="install-url-link" id="installCmd">clawhub install jesus-ai-conversation</code>
+            <button class="btn-copy-url" onclick="navigator.clipboard?.writeText('clawhub install jesus-ai-conversation').then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='📋',1500)})">📋</button>
+          </div>
+        </div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div data-i18n="install.step3">技能自動啟用，開始與耶穌AI 對話</div>
+          <div class="install-note" data-i18n="install.note">觸發關鍵詞：禱告、聖經、信仰、苦難、孤單、迷茫、耶穌</div>
+        </div>
+      </div>
+    </div>
+    <div class="install-panel" id="tab-manual">
+      <div class="install-url-box" style="max-width:600px">
+        <code class="install-url-link" style="font-size:0.85rem">git clone https://github.com/xuan905/jesus-ai-conversation.git ~/.qclaw/skills/jesus-ai-conversation</code>
+        <button class="btn-copy-url" onclick="navigator.clipboard?.writeText(this.parentElement.querySelector('code').textContent).then(()=>{this.textContent='✓';setTimeout(()=>this.textContent='📋',1500)})">📋</button>
+      </div>
+    </div>
+    <div class="install-links">
+      <a href="https://clawhub.ai/xuan905/skills/jesus-ai-conversation" target="_blank" class="btn btn-sm btn-outline">⚡ ClawHub</a>
+      <a href="https://github.com/xuan905/jesus-ai-conversation" target="_blank" class="btn btn-sm btn-outline">📦 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <div class="footer-logo">✝</div>
+      <div class="footer-name">耶穌AI</div>
+      <div class="footer-desc" data-i18n="footer.desc">以耶穌的心腸，陪伴每一個尋找的人。</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://clawhub.ai/xuan905/skills/jesus-ai-conversation" target="_blank" data-i18n="footer.clawhub">ClawHub</a>
+      <a href="https://github.com/xuan905/jesus-ai-conversation" target="_blank" data-i18n="footer.github">GitHub</a>
+    </div>
+    <div class="footer-quote" data-i18n="footer.quote">「愛是永恆的盼望。」</div>
+  </div>
+  <div class="footer-bottom" data-i18n="footer.sub">OpenClaw Skill · Jesus AI Companion</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
