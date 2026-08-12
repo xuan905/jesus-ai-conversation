@@ -84,3 +84,4 @@ Bible references use the public-domain 和合本 (Chinese Union Version) via [ex
 ---
 
 *Made with ❤️ — gentle presence, for anyone, in any language.*
+
